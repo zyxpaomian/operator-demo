@@ -1,0 +1,7 @@
+apiVersion: app.zyx.io/v1beta1
+kind: DemoService
+metadata:
+  name: demoservice-sample
+spec:
+  # Add fields here
+  foo: bar

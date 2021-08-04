@@ -1,0 +1,18 @@
+domain: zyx.io
+layout: go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operator-demo
+repo: github.com/zyxpaomian/opdemo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: zyx.io
+  group: app
+  kind: DemoService
+  path: github.com/zyxpaomian/opdemo/api/v1beta1
+  version: v1beta1
+version: "3"
